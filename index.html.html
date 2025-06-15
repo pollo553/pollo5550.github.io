@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <style>
+    h1 {
+      color: #00FFFF;
+      /* azul oscuro moderno */
+      text-align: center;
+      font-size: 48px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="title-container">
+    <h1>TRENOVA INTELLIGENCE</h1>
+    <img src="trenova.png" height="200" />
+  </div>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .hero-header {
+      position: relative;
+      background-image: url('trenova.png');
+      /*trenova.png */
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 90%;
+      height: 90%;
+      background-color: rgba(0, 0, 0, 0.5);
+      /* oscurece un poco la imagen para legibilidad */
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 200px;
+      padding: 20px;
+    }
+
+    .hero-title {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero-subtitle {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+    }
+
+    .hero-btn {
+      background-color: #1abc9c;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .hero-btn:hover {
+      background-color: #16a085;
+    }
+
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: 2rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+
+</html>
+
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TRENOVA INTELLIGENCE</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #000000, #000000);
+      color: #ffffff;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #121212cc;
+      backdrop-filter: blur(10px);
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 1rem;
+      box-shadow: 0 2px 10px #00ffe7;
+    }
+
+    nav a {
+      color: #00ffe7;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00ccff;
+    }
+
+    section {
+      padding: 120px 20px 60px 20px;
+      background: #1a1a1a;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0, 255, 200, 0.15);
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      color: #00ffe7;
+      font-size: 2em;
+      border-bottom: 2px solid #00ffe7;
+      padding-bottom: 0.3em;
+    }
+
+    .back-to-top {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 24px;
+      background: #00ffe7;
+      color: #000;
+      border: none;
+      cursor: pointer;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+      
+    }
+
+    .title-container {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      padding-top: 96px;
+    }
+
+    .back-to-top:hover {
+      background: #00ccff;
+    }
+
+    .image-container {
+      text-align: center;
+      margin: 100px 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;px
+    }
+
+    .image-container img {
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 255, 231, 0.3);
+    }
+
+    details {
+      background-color: #222;
+      padding: 10px 15px;
+      border-radius: 10px;
+      margin-top: 15px;
+      box-shadow: 0 0 10px rgba(0, 255, 231, 0.2);
+    }
+
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+      color: #00ffe7;
+    }
+
+    summary:hover {
+      color: #00ccff;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .image-container {
+        display: block;
+      }
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+    }
+
+    .products img {
+      border-radius: 16px;
+      flex: 1;
+      max-height: 181px;
+      object-fit: cover;
+      max-width: 196px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav> 
+    <a href="#autoline">AutoLine</a>
+    <a href="#neurodesk">NeuroDesk-5000</a>
+    <a href="#biopatch">BIOPATCH X-7000</a>
+    <a href="#vixion">Vixión-5000</a>
+    <a href="#termopro">TERMOPRO-3000</a>
+  </nav>
+  </div>
+  <h2>AutoLine - La autopista que piensa en ti</h2>
+  <div class="image-container">
+    <img src="autoline.png" width="290" alt="AutoLine" />
+    <img src="carreteraconleds.png" width="290" alt="AutoLine" />
+    <img src="autoline2.png" width="290" alt="AutoLine" />
+    <img src="Autopista Futurista Nocturna.png" width="290" alt="AutoLine" />
+  </div>
+  <a href="autoline4.pdf" download class="back-to-top">Descargar PDF AutoLine</a>
+
+  <details>
+    <summary>Ver más información</summary>
+    <h1>AutoLine</h1>
+    <h2>¿Qué es?</h2>
+    <p>Una red de autopistas recubierta con asfalto inteligente que se comunica con los vehículos autónomos y mejora la seguridad, el tráfico y el mantenimiento vial en tiempo real.
+    <h2>Características:</h2>
+    <h3>1. Sensores integrados en el pavimento:</h3>
+    <p>• Detectan el flujo de tráfico, clima, velocidad y peso de los vehículos.
+    <p>
+    <p>• Monitorearan el estado del asfalto (grietas, pozos, desgaste, hielo, nieve, agua)
+    <p>
+    <h3>2. Guía para vehículos autónomos:</h3>
+    <p>
+    <p> • Crea “rutas invisibles” que los coches reciben por conexión inalámbricamente, que siguen como si fuera un GPS de alta precisión centímetrica.</p>
+    <p>
+    <p> • Reduce accidentes y errores de navegación.
+    <p>
+    <h3>3. Carga eléctrica inalámbrica:</h3>
+    <p>
+    <p>• Algunas zonas permiten recargar vehículos eléctricos en movimiento.</p>
+    <p>
+    <p>• Ideal para viajes largos y transporte pesado.</p>
+    <p>
+    <h3>4. Sistema de emergencia inteligente:</h3>
+    <p>
+    <p>• Detecta accidentes y activa luces LED en el pavimento para guiar a otros conductores.</p>
+    <p>
+    <p>• Se conecta a servicios de emergencia automáticamente en caso de algún accidente o emergencia.</p>
+    <p>
+    <h3>5. Auto reparación y limpieza:</h3>
+    <p>
+    <p>• El asfalto incluye materiales auto regenerativos para grietas pequeñas.</p>
+    <p>
+    <p>• Puede calentarse en invierno para derretir la nieve o hielo y mejorar el agarre.</p>
+    <p>
+    <h3>6. Carril para vehículos de emergencia o urgencia:</h3>
+    <p>
+    <p>• Permite un carril totalmente disponible para que el vehículo de emergencia o de urgencia pueda pasar
+      (ambulancias, protección civil, federales, o incluso a cualquier vehículo autónomo, pero justificando la gravedad
+      de emergencia que tiene el usuario)</p>
+    <p>
+    <p>• Se puede usar cumpliendo lo anterior, de no ser así se vera activado los sensores y enviara a un vehículo
+      policiaco a infraccionar al vehículo o enviada la infracción al domicilio de origen de la unidad.
+    <p>
+    <h3>7. Sistema de detección de temblores:</h3>
+    <p>
+    <p>• En caso de algún sismo perceptible o mayor a una magnitud de 6, se debe de parar todos los vehículos autónomos
+      o eléctricos para una mayor seguridad de transporte, o algún fallo que se dé durante el sismo.
+
+    <h3>8. Zonas verdes integradas:</h3>
+    <p>
+    <p>• Jardines, árboles en los camellones, puentes
+    <p>
+
+    <h2>¿Para que serviría?</h2>
+    <p>
+    <p>• Disminuir el número de accidentes.
+    <p>
+    <p>• Hacer más eficientes los viajes en coche autónomo.
+    <p>
+    <p>• Reducir embotellamientos con control dinámico de carriles.</p>
+    <p>
+    <p>• Aumentar la vida útil de las autopistas.</p>
+    <p>
+
+    <h2>Los problemas de las autopistas actuales:</h2>
+    <p
+
+    <p>• No se adaptan al tráfico ni a las condiciones climáticas</p>
+    <p>
+    <p>• No se comunican con los vehículos</p>
+    <p>
+    <p>• Requieren un mantenimiento constante y costoso</p>
+    <p>
+    <p>• No están diseñadas para vehículos autónomos ni eléctricos</p>
+    <p>
+    <h2>Solución:</h2>
+    <p>
+
+   <h3>AutoLine:</h3>
+    <p>
+    <p>Autopistas activas que se comunican, se adaptan y evolucionan.</p>
+    <p>
+    <p>Una red vial preparada para la movilidad autónoma, rápida, conectada, sostenible y ecologica.</p>
+    <p>
+
+  <h2>Innovación tecnológica:</h2>
+    <p>
+
+    <p>• Asfalto sensorizado: Detecta clima, trafico, peso y velocidad.
+    <p>
+    <p>• Luces LED de superficie: Cambian según las condiciones o emergencias
+    <p>
+    <p>• Cargas eléctricas inalámbricas: En tramos específicos para autos eléctricos
+    <p>
+  <h2>Beneficios:</h2>
+    <p>
+    <p>• Menos accidentes en vehículos autónomos
+    <p>
+    <p>• Menos tráfico en horas pico con control dinámico de carriles
+    <p>
+    <p>• Reducción de emisiones gracias al tráfico más fluido
+    <p>
+    <p>• Ahorro de hasta 50% en mantenimiento a largo plazo
+    <p>
+  
+  <h2>Modelos de implementación (donde ponerlos):</h2>
+
+    <p>• Tramos urbanos o interestatales
+    <p>
+    <p>• Alianzas con gobiernos y empresas automotrices
+    <p>
+    <p>• Integración con plataformas de gestión de tránsito y emergencias
+    <p>
+
+  <h2>Inversión estimada y retorno (rentable):</h2>
+    <p>
+
+    <p>• Inicial: $150M para 50km de AutoLine
+    <p>
+    <p>• Retorno en 8 años por ahorro en accidentes, mantenimiento y eficiencia logística (utilizando los recursos de
+      manera más efectiva y eficiente para lograr resultados óptimos).
+    <p>
+    <p>• Alto potencial de escalabilidad a nivel nacional e internacional
+    <p>
+
+  <h2>Llamado a la acción:</h2>
+    <p>
+
+    <p>• Buscar aliados visionarios: Gobiernos, empresas de infraestructura y fabricantes de autos inteligentes como
+      BYD, Tesla, etc.
+    <p>
+    <p>• AutoLine es el puente entre el presente y el futuro de la movilidad
+    <p>
+    <p>• Sistema policiaco automático: Al detectar exceso de velocidad, mandar una señal a un vehículo automatizado que
+      le tome placas, foto, o lo pare. Para evitar accidentes.
+    <p>
+
+  <h2>Materiales para lograrlo:</h2>
+
+   <h3>1. Superficie y estructura de la base:</h3>
+
+    <p>• Asfalto modificado con polímeros inteligentes: Mayor resistencia al desgaste elasticidad ante cambios térmicos
+      y preparado para integrar sensores.
+    <p>
+    <p>• Nanopartículas autorreparables: Microcápsulas de polímeros con agentes de curado activados por presión y
+      temperatura, para cerrar grietas automáticamente.
+    <p>
+    <p>• Concreto fotocatalítico (zonas específicas): Ayuda a reducir la contaminación del aire al descomponer óxidos de
+      nitrógeno (NOx).
+    <p>
+
+   <h3>2. Componentes tecnológicos:</h3>
+    <p>
+
+   <h3>Sensores embebidos:</h3>
+    <p>
+    <p>• Sensores de presión (para contar y pesar los vehículos)
+    <p>
+    <p>• Sensores de temperatura y humedad
+    <p>
+    <p>• Sensores de vibración y detección de impacto.
+    <p>
+    <p>• Sensores de carga para tráfico eléctrico.
+    <p>
+    <p>• Sensores ópticos para monitoreo de carriles y visibilidad.
+    <p>
+
+   <h3>LEDS programables en el asfalto.</h3>
+    <p>
+    <p>• Resistentes a presión y agua.
+    <p>
+    <p>• Combinan color e intensidad según las condiciones del camino.
+    <p>
+    <p>• Usados para señalización dinámica (emergencias, cambio de carril, velocidad sugerida, etc.)
+    <p>
+    <h3>Bobinas de carga inductiva:</h3>
+    <p>
+    <p>• Material: Cobre plano con recubrimiento cerámico.
+    <p>
+    <p>• Integradas en tramos de la autopista para recarga en movimiento.
+    <p>
+    <p>• Conectadas a una red solar o eléctrica inteligente para una energía sustentable.
+    <p>
+
+   <h3>3. Infraestructura complementaria:</h3>
+    <p>
+
+    <p>• Paneles solares en los bordes o barandas: Energía renovable para iluminación, sensores y carga.
+    <p>
+    <p>• Cámaras y drones de monitoreo autónomo: Supervisión aérea, detección de tráfico y emergencias.
+    <p>
+    <p>• Fibras ópticas y redes 5G integradas: Para conectividad con vehículos autónomos, estaciones de control y
+      trafico.
+    <p>
+
+  <h2>Vida útil estimada de AutoLine:</h2>
+    <p>
+    <p>• Estructura básica (asfalto inteligente): de 25 a 30 años; gracias a materiales autorreparables o
+      nanotecnología.
+    <p>
+    <p>• Sensores embebidos y LEDS: 10 a 15 años; requieren mantenimiento periódico, pero son modulares.
+    <p>
+    <p>• Sistema de carga inalámbrica: 15 a 20 años; con remplazo de bobinas o módulos cada cierto tiempo
+    <p>
+    <p>• Red de comunicación 5G/fibra:10 a 12 años; con actualizaciones constantes por evolución tecnológica
+    <p>
+    <p>• Sistemas de energía solar y drones: 5 a 10 años; alta eficiencia, pero con necesidad de renovación
+    <p>
+  <h2>CONCLUSIÓN:</h2>
+        <p>
+        <p>AutoLine tendría una vida útil total de 25 a 30 años, con mantenimiento modular cada 10 a 15 años para mantener
+      operativos los sistemas inteligentes. Además, su diseño.
+      permitiría actualizaciones sin reconstrucción completa, lo que la hace sostenible a largo plazo. Permitiendo un
+      seguro viaje y comodidad durante el viaje.
+        <p>
+
+  </details>
+  <a class="back-to-top" href="#top">Volver al menú</a>
+  </section>
+
+  <section id="neurodesk">
+      <h2>NeuroDesk-5000</h2>
+    <div class="image-container">
+      <img src="neurodesk.png" width="350" alt="NeuroDesk-5000" />
+    </div>
+    <a href="neurodesk-5000.pdf" download class="back-to-top">Descargar PDF NeuroDesk-5000</a>
+    <details>
+         <p>Una silla inteligente que revoluciona la educación</p>
+      <summary>Ver más información</summary>
+      <h2>¿Qué es?</h2>
+         <p>
+         <p>Es una silla inteligente diseñada para revolucionar la experiencia educativa en las aulas del futuro. Combinando ergonomía, tecnología y personalización, esta silla transforma el modo en que los estudiantes aprenden, se concentran y se conectan con el conocimiento.
+         <p>
+      <h2>Características:</h2>
+         <p>
+       <h3>Ergonomía adaptiva inteligente:</h3>
+        <p>
+        <p>• Sensores que escanean la postura y ajustan respaldo, asiento y reposabrazos automáticamente.
+        <p>
+        <p>• Sistema de micro ajustes que previene fatiga muscular y dolores postulares.
+        <p>
+        <p>Superficie de escritorio holográfica:
+        <p>
+        <p>• Un proyector en la base despliega una pantalla interactiva flotante donde el alumno puede escribir, leer o
+           dibujar con gestos o un lápiz digital.
+        <p>
+        <p>• Compatible con libros digitales, apps educativas y realidad aumentada.
+        <p>
+       <h3>Cancelación de ruido inteligente:</h3>
+        <p>
+        <p>• Auriculares incorporados.
+        <p>
+        <p>• En el reposacabezas que aíslan el ruido externo y amplifican la voz del profesor.
+        <p>
+        <p>• Se activan solo cuando detectan distracciones o altos niveles de ruido en el entorno.
+        <p>
+       <h3>Asistente de concentración:</h3>
+        <p>
+        <p>• Un sistema IA que mide los niveles de atención y propone pausas activas, ejercicios de respiración o cambio
+        de tareas si se detecta fatiga mental.
+        <p>
+        <p>• Proyecta luces suaves o sonidos relajantes según el estado emocional del estudiante.
+        <p>
+       <h3>Energía autosustentable:</h3>
+        <p>
+        <p>• Paneles solares miniaturizados y carga cinética generada por el movimiento del usuario.
+        <p>
+        <p>Función de compartir información con el maestro:
+        <p>
+        <p>• Cada silla puede concentrarse a una red escolar para compartir la información de cada estudiante con el
+        profesor/profesora, tareas, trabajos etc.
+        <p>
+       <h3>Función de privacidad y trabajo en grupo:</h3>
+        <p>
+        <p>• Paneles laterales desplegables para crear espacios individuales
+         <p>
+         <p>• También se pueden unir magnéticamente con otras sillas para formar estaciones colaborativas.
+         <p>
+      <h2>Beneficios:</h2>
+         <p>
+         <p>• Un mejor rendimiento del estudiante
+         <p>
+         <p>• No cargar libros
+         <p>
+         <p>• Mejor concentración en clase y menos distracciones
+         <p>
+         <p>• Ahorrar y ayudar en el cuidado del ambiente ya que no necesita lápices ni plumas, solo ocupan el lápiz
+            digital.
+         <p>
+         <p>• No necesita energía eléctrica ya que se carga solarmente y con energía cinética del usuario.
+         <p>
+         <p>• Ayuda a la conservación del medio ambiente evitando el uso de papeles, libretas, o lápices de madera. Ya que
+            cuenta con libretas digitales.
+      <p>
+      </p>
+    </details>
+
+    <a class="back-to-top" href="#top">Volver al menú</a>
+  </section>
+
+  <section id="biopatch">
+     <h2>BIOPATCH X-7000</h2>
+    <div class="image-container">
+      <img src="biopatch.png" width="350" alt="BIOPATCH X-7000" />
+    </div>
+    <a href="biopatch-folleto.pdf" download class="back-to-top">Descargar PDF BioPatch X-7000</a>
+    <details>
+        <p>Un parche inteligente que monitorea salud física y emocional en tiempo real...</p>
+      <summary>Ver más información</summary>
+      <h2>¿Qué es?</h2>
+        <p>Es un pequeño parche inteligente que se coloca sobre la piel y monitorea en tiempo real tu salud física y
+        emocional, actuando como un médico personal 24/7.
+        <p>
+      <h2>Características:</h2>
+         <p>
+       <h3>1. Análisis en tiempo real:</h3>
+         <p>Monitorea constante vitales (ritmo cardiaco, presión arterial, oxigeno, glucosa,hidratación, temperatura, estrés, etc.) y envía alertas si detecta algo anormal.
+         <p>
+       <h3>2. Prevención preventiva: </h3>
+         <p>Usa IA para predecir posibles enfermedades antes de que aparezcan síntomas, como; diabetes, problemas cardiacos o infecciones.</p>
+         <p>
+       <h3>3. Generación de microdosis automáticas: </h3>
+         <p>En caso de necesidad, puede liberar microdosis de medicamentos atreves de la piel (autorizado por el usuario o un médico previamente)
+         <p>
+       <h3>4. Estado emocional y mental:</h3>
+         <p> Al detectar estrés, ansiedad o fatiga mental, y sugiere ejercicios, respiración guiada o incluso regula el entorno si esta conectado al hogar inteligente. Todo mediante sensores incluidos en el material de el parche.</p> 
+         <p>
+       <h3>5. Interfaz holográfica:</h3>
+         <p> Proyecta una pequeña pantalla holográfica desde el parche para ver datos, recibir recomendaciones o incluso llamar a un médico con un toque.</p>
+         <p>
+      <h2>Para que personas están dirigidos (todo público, especialmente.):</h2>
+         <p>
+         <p>• Adultos mayores
+         <p>
+         <p>• Deportistas y atletas
+         <p>
+         <p>• Personas con algún tipo de enfermedad
+         <p>
+        <p>• Personas que no han desarrollado ninguna enfermedad ya que les va a ayudar a prevenirlas o tratarlas
+      <h2>Beneficios:</h2>
+        <p>
+        <p>• Menor riesgo de desarrollo de enfermedades cardiacas entre otra.
+        <p>
+        <p>• Menor fatiga, estrés o ansiedad
+        <p>
+        <p>• Automedicación autorizada
+        <p>
+        <p>• Atención personal en medicación, incluso a controlar las luces, sonido del hogar.
+        <p>
+       <h3>Este parche ayudara a prevenir y disminuir las enfermedades cardiacas, obesidad, arteriales, etc; todo esto para un mejor estado de salud en la sociedad</h3>
+        <p>
+
+    </details>
+    <a class="back-to-top" href="#top">Volver al menú</a>
+  </section>
+
+  <section id="vixion">
+    <h2>Vixión-5000</h2>
+    <div class="image-container">
+      <img src="vixion.png" width="350" alt="Vixión-5000" />
+
+    </div>
+    <a href="vixion-x.pdf" download class="back-to-top">Descargar PDF Vixión-5000</a>
+    <details>
+      <summary>Ver más información</summary>
+      <p>Lentes inteligentes con cristales líquidos que se adaptan al iris...</p>
+  <h2>¿Qué es?</h2>
+      <p>Son unos lentes inteligentes diseñados para adaptarse automáticamente al iris (a la vista) de cualquier
+        persona. Están fabricados con cristales líquidos ajustables y una montura de titanio ultraligero con
+        nanotecnología integrada.
+      <p>
+  <h2>Características:
+      <p>
+      <h3>Autoajuste de graduación en tiempo real:</h3>
+      <p>
+      <p>
+      <p>• Sensores ópticos analizan la visión del usuario al momento de colocárselos.
+      <p>
+      <p>• Los cristales líquidos cambian su curvatura y enfoque en milisegundos para ofrecer la graduación exacta, ya
+        sea para miopía, hipermetropía o astigmatismo.
+      <p>
+      <h3>Modo multifocal automático:</h3>
+      <p>
+      <p>• Detecta hacia donde mira el usuario (cerca o lejos) y ajusta el enfoque solo en esa área del lente,
+        eliminando la necesidad de bifocales.
+      <p>
+      <h3>Conexión con app móvil:</h3>
+      <p>
+      <p>• Permite guardar múltiples perfiles de visión (lectura, pantalla, noche, conducción)
+      <p>
+      <p>• También lleva un registro de la salud visual y recomienda chequeos si detecta cambios importantes en la
+        visión.
+      <p>
+    <h3>Oscurecimiento inteligente:</h3>
+      <p>
+      <p>• Los lentes se oscurecen automáticamente con la luz solar (fotocromáticos) y ofrecen protección UV y filtro de
+        luz azul para protección de las pantallas.
+      <p>
+    <h3>Batería autosustentable:</h3>
+      <p>
+      <p>• Se cargan con luz solar (tecnología piezoeléctrica en la patilla).
+      <p>
+      <p>• Duración de la batería: hasta 2 semanas sin recarga, incluso no se puede llegar a necesitar si se la pasa en
+        la calle, solo se requerirá para cuando este en un lugar sin luz solar por más de 2 semanas.
+      <p>
+    <h3>Estética personalizable:</h3>
+      <p>
+      <p>• Marcos intercambiables con diseños clásicos, modernos o incluso invisibles (marco transparente)
+      <p>
+      <p>• Pantalla invisible para notificaciones básicas si se desean como llamadas, mensajes, recordatorios)
+      <p>
+    <h3>Autolimpieza:</h3>
+      <p>
+      <p>• Para ahorrar tiempo en limpiar los lentes cuando se ensucien.
+      <p>
+
+    </details>
+    <a class="back-to-top" href="#top">Volver al menú</a>
+  </section>
+
+  <section id="termopro">
+    <h2>TERMOPRO-3000</h2>
+    <div class="image-container">
+      <img src="termopro.png" width="350" alt="TERMOPRO-3000" />
+    </div>
+    <a href="termopro-3000.pdf" download class="back-to-top">Descargar PDF TERMOPRO-3000</a>
+    <details>
+      <summary>Ver más información</summary>
+      <p>Un vaso inteligente con ajuste de temperatura, pantalla LED, conexión Bluetooth</p>
+      <p>
+    <h2>¿Qué es?</h2>
+     <h3>Características Principales:</h3>
+      <p>
+      <p>• Ajuste de temperatura personalizado (frío o caliente, entre 0°C y 70°C).
+      <p>
+      <p>• Pantalla táctil LED para ver y modificar la temperatura.
+      <p>
+      <p>• Conectividad Bluetooth para control desde una app.
+      <p>
+      <p>• Batería recargable de larga duración (hasta 10 horas de uso).
+      <p>
+      <p>• Aislamiento térmico para mantener la temperatura y evitar que se caliente o enfríe al tacto.
+      <p>
+      <p>• Sistema de seguridad que detecta si hay líquido antes de calentar o enfriar.
+      <p>
+      <p>• Ahorro de “Hielo y Gas”
+      <p>
+     <h3>Tecnología Interna:</h3>
+      <p>
+      <p>• Elemento Peltier (termoeléctrico) para enfriar o calentar rápidamente.
+      <p>
+      <p>• Sensor de temperatura digital de alta precisión.
+      <p>
+      <p>• Batería de litio de 5000 mAh.
+      <p>
+      <p>• Placa calefactora y disipador con ventilador silencioso.
+      <p>
+      <p>• Placa base con electrónica de control (microcontrolador).
+      <p>
+     <h3> Aplicación Complementaria(opcional):</h3>
+      <p>
+      <p>• Elegir temperatura exacta.
+      <p>
+      <p>• Notificaciones cuando la bebida alcanza la temperatura deseada.
+      <p>
+      <p>• Estadísticas de consumo.
+      <p>
+     <h3>Materiales del Vaso:</h3>
+      <p>• Exterior: Acero inoxidable con recubrimiento antideslizante.
+      <p>
+      <p>• Interior: Cerámica alimentaria o acero inoxidable.
+      <p>
+      <p>• Capacidad: 350 - 500 ml.
+      <p>
+      <p>• Tapa sellada con válvula para beber sin derrames.
+      <p>
+
+      <h3>Carga:</h3>
+      <p>• Cuenta con unos sensores para carga con energía cinética de el usuario que lo utiliza.
+      <p>
+      <p>• Carga inalámbrica, con una base que tiene.
+      <p>
+      <p>Opcional:
+      <p>• Luz LED de ambiente que cambia según la temperatura (azul = frío, rojo = caliente).
+      <p>
+      <p>• Modo ecológico para mantener la temperatura con mínimo consumo energético.
+      <p>
+
+    </details>
+    <a class="back-to-top" href="#top">Volver al menú</a>
+    <section id="products">
+      <h2>Productos</h2>
+      <div class="products">
+        <img src="taza.png" width="150" alt="Vixión-5000" />
+        <img src="camisa.png" width="150" alt="Vixión-5000" />
+        <img src="camisaazul.png" width="150" alt="Vixión-5000" />
+        <img src="camisa mujer.png" width="150" alt="products" />
+        <img src="gorra.png" width="150" alt="productos" />
+      </div>
+    </section>
+    </details>
+    <a class="back-to-top" href="#top">Volver al menú</a>
+    <section id="company">
+      <h2>Compañía</h2>
+      <div class="Company">
+        <img src="empresa.png" width="500" alt="company" />
+      </div>
+    </section>
+  </details>
+  <a class="back-to-top" href="#top">Volver al menú</a>
+</body>
+
+</html>
